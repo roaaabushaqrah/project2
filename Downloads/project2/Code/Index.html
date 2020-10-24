@@ -1,0 +1,154 @@
+<html>
+    <head>
+        <title>
+            ARA Business
+        </title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="style.css">
+        <link href='https://fonts.googleapis.com/css?family=Chilanka' rel='stylesheet'>
+        <!-- icone for menu-->
+        <script src="https://kit.fontawesome.com/7ae71a9832.js" crossorigin="anonymous"></script>
+        <!-- Iused 5type for meta-->
+<meta charset="utf-8">
+
+    <meta name="author" content="BY ARA">
+<!--the viewport to make your website look good on all devices-->
+<meta name="viewport"content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="description" content="ARA Bussiness Owner BY Assel Roaa and Adem.This web application was created to help businessmen, 
+the banking sector and companies to organize their businesses, accounts housewives, university and school students.">
+<meta name="keyword" content="Organize tasks, time management,Speed in completing tasks,Quality in services,Accuracy in arithmetic operations">
+   </head> 
+   <body   onload="fillform()">
+    <!-- start structure for header-->
+     <header class="pagecontainer" >
+      <img src="2.png">
+      <p> "According to MY calculator Problem Doesn't Exist"</p>
+      <h1>SignUp</h1>
+      
+     </header>
+     <!-- content sidebar-->
+   <div id="sidebar">
+      <div class="toggle-btn" onclick="toggleSidebar(this)">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>  
+      <div class="list">
+        <div class="item"><a href="index.html">SignUp</a></div>
+        <div class="item"> <a href="LIST todo.html">List to do</a></div>
+        <div class="item">  <a href="calculator.html">calculator</a></div>
+
+
+      </div>
+
+    </div>
+    <!--start form structure-->
+    <div class="grid-container">
+        <div id="inp">
+        <form class="fields"  onsubmit="return validation()" style="margin-top: 2.5em">
+          <div class="txt">
+            <input class="form-control" id="Username"  type="text"  placeholder="User Name"/>
+          </div>
+         
+          <div id="name_err" style="color: red"></div>
+          <div class="txt">
+           
+            <input  class="form-control"  id="email"  type="text" placeholder="Email"/>
+          </div>
+             
+            
+          <div id="email_err" style="color: red"></div>
+           
+          <div class="txt">
+            <input class="form-control"  id="DOB"  type="text"  placeholder="Date of birth" /> 
+          </div>
+           
+          <div id="DOB_err" style="color: red"></div>
+
+          <div class="txt">
+            <input class="form-control" id="phone" type="text"  placeholder="Phone Number" />
+          </div>
+           
+            
+          <div id="phone_err" style="color: red"></div>
+
+          <div class="txt">
+            <input class="form-control" id="pass"  type="password"  placeholder="Password"/>
+            
+          </div>
+          <div id="pass_err" style="color: red"></div>
+
+          <div class="txt">
+            <button class="btn btn-primary" id="bt1" value="submit"> Submit  </button>
+          </div>
+        </form>
+      </div>
+           <!-- 3 buttons for local and session storage and clear-->
+      <div id="btns">
+       <div class="acceptBox">
+        <input type="checkbox" id="storagePermission" />
+      <h4>DO you accept to store your data??</h4>
+     
+      </div>
+
+       <div class="flexcont">
+          <button onclick="localsessionstore('local')"  class="storageButton"  disabled >    Save to local storage </button>
+        
+          <button  onclick="localsessionstore('session')" class="storageButton"  disabled >  Save to session storage   </button>
+          <button onclick="clearall()">Clear all</button>
+        </div>
+      </div>
+    </div>
+    <!--link jQuery +javascript-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>  
+          
+    <script src="code.js"></script>
+
+
+    <footer class="footer">
+     <p> Power by:ARA Business @Amman-Jordan</p>
+    </footer>
+   
+   
+    
+      </body>
+      </html>
+         
+          
+         
+           
+         
+          
+           
+          
+
+
+
+
+        
+              
+            
+              
+         
+              
+           
+           
+        
+         
+            
+         
+          
+          
+           
+         
+
+          
+         
+         
+         
+          
+      
+
+
+
+ 

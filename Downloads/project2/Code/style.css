@@ -1,0 +1,178 @@
+/* for all pages*/
+* {box-sizing: border-box; 
+    margin:0px;
+    padding:0px;
+    box-sizing:border-box;
+    font-family: 'Chilanka';font-weight: bolder; color:white;font-size: 1vw;
+  }
+  
+ /* style for header*/
+ .pagecontainer{ background-color: #225378; display:grid ; grid-template-columns: auto;position: static;
+ height: 20%;justify-content: center;
+} 
+/* style for logo*/
+img{ width: 10%;position:absolute;right:75%; z-index: 1;padding:9px;}
+/* style for para and heading and anchour link*/
+p{ position: relative; top: 20%;font-weight: bolder;font-size:2vw;}
+ h1{text-align: center; font-size: 2vw;font-weight: bolder;}
+ a{text-decoration: none;color:white;}
+ /* desigin for menue sise bar*/
+ #sidebar {
+    position:absolute;
+    top:0px;
+    left:-200px;
+    width:200px;
+    height:100%;
+    background:#2d709f;
+    transition:all 300ms linear;
+  }
+  #sidebar.active {
+    left:0px;
+  }
+  #sidebar .toggle-btn {
+    position:absolute;
+    left:220px;
+    top:10px;
+  }
+  #sidebar .toggle-btn span {
+    display:block;
+    width:30px;
+    height:5px;
+    background:#151719;
+    margin:5px 0px;
+    cursor:pointer;
+  }
+  #sidebar div.list div.item {
+    padding:15px 10px;
+    border-bottom:1px solid #444;
+    color:#fcfcfc;
+    text-transform:uppercase;
+    font-size:20px;
+  }
+
+  .footer { z-index: -1;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+  width: 100%;
+   height: 10%;
+    background-color:#225378;
+   
+    text-align: center;
+  
+    font-size: 25px;}
+  
+ /*style form use grid and flex*/
+  .grid-container {
+    display: flex;
+    grid-template-columns: auto auto;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+    grid-gap: 100px;
+    flex-wrap: wrap;
+  }
+
+  .flexcont {color:black; border: 1px solid black;
+    width: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .flexcont button {border: 1px solid black;
+    margin: 10px;
+    height: 50px;
+  }
+  .fields {
+    padding-top: 50px;
+    width: 400px;
+    line-height: 50px;
+    margin: 50px;
+  }
+  .txt {
+    padding: 4px;
+    margin: 5px;
+    width: 100%;
+  }
+
+  
+  button:disabled,
+  button[disabled] {
+    cursor: not-allowed;
+  }
+  #storagePermission {
+    padding: 5px;
+    margin: 15px;
+  }
+  .acceptBox {color: black;
+    display: flex;
+  }
+  @media screen and (max-width: 400px) {
+    .fields {
+  margin-top: 2.5em;
+width: 90%;
+padding-right: 50px
+
+    }
+  }
+
+  @media screen and(max-width: 768px) { .pagecontainer{  padding-top: 150px;}}
+
+ 
+   /* @media screen and (max-width: 700px) {
+.fields{   
+        flex-direction: column;
+      }
+    }*/
+/* star 3td page*/
+
+.calculator-grid {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+ max-height: 90px;
+  grid-template-columns: repeat(4, 100px);
+  grid-template-rows: minmax(100px, auto) repeat(5, 70px);
+  position: relative;
+left:-50px; top:200px;
+  text-align: center;
+}
+  
+  .calculator-grid > button {
+  cursor: pointer;
+  font-size: 2rem;
+  border: 1px solid white;
+  outline: none;
+  background-color:#225378;
+  }
+  
+  .calculator-grid > button:hover {
+  background-color:yellow;
+  }
+  
+  .span-two {
+  grid-column: span 1;
+  }
+  
+  .output {
+  grid-column: 1 / -1;
+  background-color:#3084c5;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+  flex-direction: column;
+ padding: 10px;margin-top: 2px;
+  word-wrap: break-word;
+  word-break: break-all;
+  }
+  
+  .output .previous-operand {
+  color:white;
+  font-size: 1.5rem;
+  }
+  
+  .output .current-operand {
+  color: white;
+  font-size: 2.5rem;
+  }
+
